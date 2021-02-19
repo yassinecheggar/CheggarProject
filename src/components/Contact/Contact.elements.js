@@ -17,8 +17,10 @@ export const FormGroup = styled.div`
 export const Label = styled.label`
 	
     font-size:18px;
-	color:#101522;
+	color:#404040;
     font-weight:bold;
+	text-align:left;
+	padding:10px
 `;
 
 export const Input = styled.input`
@@ -61,6 +63,7 @@ display: flex;
 justify-content: space-between;
 margin-top:1.5em;
 margin-bottom:3em;
+flex-wrap: wrap;
 `;
 
 export const TitleContainer = styled.div`
@@ -71,9 +74,25 @@ flex-direction:column;
 
 export const Title = styled.h1`
 margin-top:1.5em;
+margin-bottom:0.9em;
 `;
 
 export const Subtitle = styled.h3`
-margin-top:1em;
+
 color:gray;
 `;
+
+export const InfoContainer= styled.div`
+max-width:500px;
+display :flex;
+margin-top:20px;
+margin-top:40px;
+color:#003ea3;
+`;
+
+export const  MapContainer=styled.div`
+  width: 600px;
+  height:300px;
+  
+`;
+
