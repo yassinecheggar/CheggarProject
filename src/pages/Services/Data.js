@@ -9,9 +9,9 @@ export const homeObjOne = {
   headline: 'Unlimited Transactions with zero fees',
   description:
     'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-  buttonLabel: 'Get Started',
+  buttonLabel: '',
   imgStart: '',
-  img: require('../../images/svg-1.svg'),
+  img: "",
   alt: 'Credit Card'
 };
 

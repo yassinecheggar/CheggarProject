@@ -1,13 +1,13 @@
 import React from 'react';
-import { InfoSection } from '../../components';
+import { Service } from '../../components';
 import { homeObjOne, homeObjThree } from './Data';
 
 function Services() {
   return (
     <>
       
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjThree} />
+      <Service />
+      
     </>
   );
 }
