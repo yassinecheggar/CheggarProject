@@ -1,16 +1,13 @@
 import styled  from 'styled-components';
-import img from '../../images/serviceBack.jpg';
+
 
 export const Wrapper = styled.div`
-
 height: 600px ;
 `;
 export const  HeadContainer = styled.div`
     display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    margin-top:60px;
-    margin-bottom:60px;
+    height:500px;
+   
 `;
 
 export const  HeadMessage = styled.h1`
@@ -38,6 +35,18 @@ export const Img = styled.img`
 `;
 export const ServiceSec = styled.div`
   color: #fff;
-  padding: 160px 0;
+  padding: 100px 0;
   background: #ededed;
 `;
+
+export const  ItemsTitleContainer= styled.div`
+display:flex;
+`;
+
+export const  ItemsTitle= styled.h1`
+
+color:#2679ff;
+margin-bottom:50px;
+font-weight:normal;
+`;
+ 
