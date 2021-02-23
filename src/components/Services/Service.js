@@ -13,7 +13,13 @@ import Typography from "@material-ui/core/Typography";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import mystyle from "react-awesome-slider/dist/styles.css?raw";
-import CustomModal from '../Modal/CustomModal'
+import CustomModal from '../Modal/CustomModal';
+import {ServiceObjOne ,
+  ServiceObjTwo ,
+  ServiceObjThree
+  ,ServiceObjFour,
+  ServiceObjFive,
+  ServiceObjSix} from '../Modal/Data';
 
 import {
   Itemcontainer,
@@ -58,7 +64,7 @@ function slider() {
 function Service() {
   const classes = useStyles();
   return (
-    <>
+    <> 
       
         <HeadContainer>
         {slider()}
@@ -89,15 +95,13 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {ServiceObjOne.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
                
-              <CustomModal />
+              <CustomModal {...ServiceObjOne } />
 
 
               </CardActions>
@@ -123,16 +127,12 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                     {ServiceObjTwo.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Learn More
-                </Button>
+              <CustomModal {...ServiceObjTwo } />
               </CardActions>
             </Card>
 
@@ -156,16 +156,12 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {ServiceObjThree.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                Froid - Thermique
-                </Button>
+              <CustomModal {...ServiceObjThree } />
               </CardActions>
             </Card>
             <Card
@@ -188,16 +184,12 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {ServiceObjFour.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+              <CustomModal {...ServiceObjFour } />
               </CardActions>
             </Card>
 
@@ -221,16 +213,12 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                   {ServiceObjFive.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+              <CustomModal {...ServiceObjFive } />
               </CardActions>
             </Card>
 
@@ -254,16 +242,12 @@ function Service() {
                     color="textSecondary"
                     component="p"
                   >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {ServiceObjSix.Desc}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+              <CustomModal {...ServiceObjSix } />
               </CardActions>
             </Card>
           </Itemcontainer>

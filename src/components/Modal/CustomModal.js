@@ -5,6 +5,8 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import {ModalContainer ,MyModal,Horiz} from './ModalElements';
+import Button from "@material-ui/core/Button";
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -25,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function CustomModal() {
+
+function CustomModal(Item) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -39,9 +42,9 @@ function CustomModal() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
-      </button>
+      <Button size="small" color="primary" onClick={handleOpen}>
+                  learn more
+                </Button>
       <MyModal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -56,43 +59,9 @@ function CustomModal() {
       >
         <Fade in={open}>
           <ModalContainer >
-            <h2 id="transition-modal-title" style={{color:'gray'}}>Transition modal</h2>
-            <Horiz />
-            <p id="transition-modal-description">react-transition-group animates me react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
+            {Item.Name}
+
+            {Item.Text}
           </ModalContainer>
         </Fade>
       </MyModal>
@@ -101,3 +70,4 @@ function CustomModal() {
 }
 
 export default CustomModal
+
