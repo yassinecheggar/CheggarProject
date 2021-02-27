@@ -9,7 +9,7 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Marketing Agency',
+    topLine: 'CABINET DE CONSEIL ET DE FORMATION',
     headline: 'Lead Generation Specialist for Online Businesses',
     description:
       'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',

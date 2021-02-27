@@ -82,7 +82,7 @@ function Footer() {
         <SocialMediaWrap>
           <SocialLogo to='/'>
             <GiAfrica />
-            CHEGGAR
+             M C D O S
           </SocialLogo>
           <WebsiteRights>Cheggar © 2021</WebsiteRights>
           <SocialIcons>

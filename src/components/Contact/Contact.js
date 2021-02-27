@@ -7,6 +7,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsPhone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import Map from '../Map/Map';
+import { makeStyles } from '@material-ui/core/styles';
 
 import {
   FormGroup,
@@ -23,7 +24,38 @@ import {
   MapContainer
 } from "./Contact.elements";
 
+
+
+const useStyles = makeStyles({
+  root: {
+
+    '& label.Mui-focused': {
+      color: 'green',
+    },
+
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'green',
+    },
+  },
+ 
+});
+
+
+const ButtonStyle = makeStyles({
+  root: {
+
+    background:'black',
+    '&:hover': {
+      background: '#ff7315',
+      color:'wight'
+    },
+  },
+ 
+});
 function Contact() {
+  const classes = useStyles();
+  const  classesB = ButtonStyle();
+
   return (
     <>
       <Container>
@@ -35,10 +67,10 @@ function Contact() {
           <GroupWrapper>
             
             <FormGroup>
-              <TextField id="name" label="Full Name" />
+              <TextField id="name" label="Full Name"  classes={{ root: classes.root }}/>
             </FormGroup>
             <FormGroup>
-              <TextField id="Email" label="Email" type="email" />
+              <TextField id="Email" label="Email" type="email" classes={{ root: classes.root }} />
             </FormGroup>
 
             <FormGroup>
@@ -47,11 +79,11 @@ function Contact() {
                 label="Message"
                 multiline
                 rows={4}
-                
+                classes={{ root: classes.root }}
               />
             </FormGroup>
             <FormGroup>
-            <Button variant="contained" color="primary" href="#contained-buttons">
+            <Button variant="contained" color="primary" href="#contained-buttons"  classes={{ root: classesB.root }}>
         Send
       </Button>
       </FormGroup>

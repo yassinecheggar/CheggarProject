@@ -6,7 +6,7 @@ import {Container} from '../../globalStyles';
 
 
 export const Nav = styled.nav` 
-background:#101522;
+background:#232020;
 height:80px;
 display:flex;
 justify-content:center;
@@ -26,7 +26,7 @@ ${Container}
 `;
 
 export const  NavLogo = styled(Link)`
-color:#fff;
+color:#f4f4f4;
 justify-self:flex-start;
 cursor: pointer;
 text-decoration:none;
@@ -67,7 +67,7 @@ text-align:center;
     left:${({click})=>(click? 0:'-100%')};
     opacity:1;
     transition:all 0.5s ease; 
-    background:#101522;
+    background:#232020;
 }
 `;
 export const NavItem = styled.li`
@@ -75,17 +75,19 @@ height: 80px;
 border-bottom:2px solid transparent;
 
 &:hover{
-    border-bottom:2px solid #4b59f7;
+    border-bottom:2px solid orange;
 }
 @media screen and  (max-width:960px){
     width:100%;
     &:hover{
          border:none;
+         
+         
     }
 }
 `;
 export const NavLinks = styled(Link)`
-color:#fff;
+color:white;
 display:flex;
 align-items:center;
 text-decoration:none;
@@ -99,8 +101,18 @@ height: 100%;
 
 
     &:hover{
-        color:#4b59f7;
+        color:#107510;
         transition: all 0.3s ease,
     }
 }
+`;
+export const  Img = styled.img`
+   
+   height: 80%;
+   width:25%;
+   
+   @media screen and  (max-width:960px){
+    height: 100%;
+    width:35%;
+   }
 `;

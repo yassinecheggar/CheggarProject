@@ -11,6 +11,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  Img
 } from "./Navbar.elements";
 
 function Navbar() {
@@ -23,8 +24,8 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
-              Cheggar
+              
+              <Img src="image/logo.png" />
             </NavLogo>
             <MobileIcon onClick={handlclick}>
               {click ? <FaTimes /> : <FaBars />}

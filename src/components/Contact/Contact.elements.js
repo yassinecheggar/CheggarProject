@@ -75,11 +75,12 @@ flex-direction:column;
 export const Title = styled.h1`
 margin-top:1.5em;
 margin-bottom:0.9em;
+color:#232020;
 `;
 
 export const Subtitle = styled.h3`
 
-color:gray;
+color:#3a3535;
 `;
 
 export const InfoContainer= styled.div`
@@ -87,7 +88,7 @@ max-width:500px;
 display :flex;
 margin-top:20px;
 margin-top:40px;
-color:#003ea3;
+color:#ff7315;
 `;
 
 export const  MapContainer=styled.div`

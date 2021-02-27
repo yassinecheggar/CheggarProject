@@ -4,8 +4,8 @@ import styled  from 'styled-components'
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+  padding: 130px 0;
+  background: ${({ lightBg }) => (lightBg ? '#fff' : '#232020')};
 `;
 
 export const InfoRow = styled.div`
