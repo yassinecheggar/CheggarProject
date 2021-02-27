@@ -22,6 +22,11 @@ export const Container = styled.div`
     padding-right: 30px;
     padding-left: 30px;
   }
+
+  @media screen and (max-width: 460px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 `;
 
 export const Button = styled.button`

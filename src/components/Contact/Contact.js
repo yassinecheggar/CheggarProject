@@ -21,7 +21,7 @@ import {
   Subtitle,
   TitleContainer,
   InfoContainer,
-  MapContainer
+  FlexDiv
 } from "./Contact.elements";
 
 
@@ -65,7 +65,7 @@ function Contact() {
           </TitleContainer>
         <FromWrapper>
           <GroupWrapper>
-            
+            <FlexDiv></FlexDiv>
             <FormGroup>
               <TextField id="name" label="Full Name"  classes={{ root: classes.root }}/>
             </FormGroup>

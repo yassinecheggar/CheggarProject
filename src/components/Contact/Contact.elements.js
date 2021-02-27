@@ -1,5 +1,5 @@
-import styled  from 'styled-components';
-import {Container} from '../../globalStyles';
+import styled from 'styled-components';
+import { Container } from '../../globalStyles';
 
 
 export const FormGroup = styled.div`
@@ -85,7 +85,7 @@ export const Subtitle = styled.h3`
 color:#3a3535;
 `;
 
-export const InfoContainer= styled.div`
+export const InfoContainer = styled.div`
 max-width:500px;
 display :flex;
 margin-top:20px;
@@ -93,9 +93,13 @@ margin-top:40px;
 color:#ff7315;
 `;
 
-export const  MapContainer=styled.div`
+export const MapContainer = styled.div`
   width: 600px;
   height:300px;
   
 `;
+export const FlexDiv = styled.div`
+display : flex;
+`;
+
 
