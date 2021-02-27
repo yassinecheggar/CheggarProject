@@ -8,12 +8,16 @@ export const FormGroup = styled.div`
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
-	min-width: 400px;
-	max-width:500px;
-	 width:auto;
+	
+	 width:500px;
 	margin: 20px;
     text-align:left;
-    
+	@media screen and (max-width: 991px) {
+		width:400px;
+  }
+  @media screen and (max-width: 991px) {
+		width:300px;
+  }
 `;
 
 export const Label = styled.label`
