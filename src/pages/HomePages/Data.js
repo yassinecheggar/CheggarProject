@@ -10,9 +10,9 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'CABINET DE CONSEIL ET DE FORMATION',
-    headline: 'Lead Generation Specialist for Online Businesses',
+    headline: 'Nous sommes une Société de Conseil et D’accompagnement',
     description:
-      'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+      'Nous accompagnons les entreprises dans la définition et la déclinaison opérationnelle de leurs stratégies de transformation.',
     buttonLabel: 'Get Started',
     imgStart: '',
     img:  SvG1,
@@ -26,10 +26,12 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Instant Setup',
-    headline: 'Extremely quick onboarding process',
-    description:
-      "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
+    topLine: '',
+    headline: 'Nos axes de travail',
+    description:<>
+      <p>Selon vos attentes et priorités, nos interventions et efforts de formation, portent sur l’acquisition de techniques et méthodes, ainsi que sur la pratique de comportements productifs, afin de promouvoir des terminologies et référentiels communs.</p><br />
+      <p>Nous travaillons par adaptation / amélioration d’outils existants et par des mises en situations qui reflètent les réalités opérationnelles rencontrées par les acteurs.</p><br />
+      <p>L’objectif est l’acquisition de réflexes plutôt qu’une simple compréhension intellectuelle.</p> </>,
     buttonLabel: 'Learn More',
     imgStart: '',
     img: SvG2,
@@ -43,11 +45,11 @@ export const homeObjOne = {
     lightTopLine: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Sarah Jeni',
+    topLine: '',
     headline:
-      'Ultra helped me increase my revenue by over 3X in less than 3 months!',
+      'Nos valeurs',
     description:
-      "Their team is wonderful! I can't believe I didn't start working with them earlier.",
+      <p>Transmettre avec pragmatisme et humilité une réflexion , des méthodes et des savoir-faire, enrichis par une expérience terrain. <br /><br /> Faire l’effort de comprendre vos réalités opérationnelles , afin que nos actions de formation servent vos priorités.<br /><br />Faire preuve d’honnêteté et de franchise  dans toutes les étapes de la relation.</p>,
     buttonLabel: 'View Case Study',
     imgStart: 'start',
     img: SvG3,
@@ -57,14 +59,16 @@ export const homeObjOne = {
   
   export const homeObjFour = {
     primary: true,
-    lightBg: false,
-    lightTopLine: true,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Secure Database',
-    headline: 'All your data is stored on our secure server',
+    lightBg: true,
+    lightTopLine: false,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: '',
+    headline: 'Toutes vos données sont stockées sur notre serveur sécurisé',
     description:
-      'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
+      <>
+      <p>Vous n'aurez jamais à vous soucier de la fuite de vos informations. Notre équipe d'experts en sécurité veillera à ce que vos dossiers sont conservés en toute sécurité.</p>
+      </>,
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
     img: SvG4,

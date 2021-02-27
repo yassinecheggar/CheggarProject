@@ -3,16 +3,18 @@ import styled  from 'styled-components';
 
 export const  ImageContainer = styled.div`
  
-  background: gray;
-    height:500px ;
+ background: black;
  
+ overflow: hidden;
+    height:500px ;
+    
 `;
 
 export const  Img = styled.img`
    
    height: 100%;
    width:100%;
-   
+  opacity:0.3 ;
    
 `;
 
