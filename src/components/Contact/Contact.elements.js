@@ -8,8 +8,10 @@ export const FormGroup = styled.div`
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
-	width: 400px;
-	margin: 20px auto;
+	min-width: 400px;
+	max-width:500px;
+	 width:auto;
+	margin: 20px;
     text-align:left;
     
 `;
