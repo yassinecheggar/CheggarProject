@@ -28,6 +28,7 @@ export const  TitleContainer = styled.div`
 
   position: absolute;
   top:40%;
+  bottom:40%;
   left:10%;
   right:10%;
   
