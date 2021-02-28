@@ -25,11 +25,10 @@ font-size:50px;
 `;
 
 export const  TitleContainer = styled.div`
- 
-  display:flex;
-  flex-direction:column;
-    position: absolute;
-        top:220px;
-padding-left:100px;
-max-width:600px;
+
+  position: absolute;
+  top:40%;
+  left:10%;
+  right:10%;
+  
 `;

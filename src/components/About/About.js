@@ -8,7 +8,7 @@ function About() {
             <ImageContainer>
             <TitleContainer>
             <Title>We make Mondays to Fridays exciting </Title>
-            
+             
                 
             </TitleContainer>
                 
