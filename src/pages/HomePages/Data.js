@@ -12,7 +12,7 @@ export const homeObjOne = {
     topLine: 'CABINET DE CONSEIL ET DE FORMATION',
     headline: 'Nous sommes une Société de Conseil et D’accompagnement',
     description:
-      'Nous accompagnons les entreprises dans la définition et la déclinaison opérationnelle de leurs stratégies de transformation.',
+      <p>Nous accompagnons les entreprises dans la définition et la déclinaison opérationnelle de leurs stratégies de transformation.</p>,
     buttonLabel: 'Get Started',
     imgStart: '',
     img:  SvG1,
