@@ -27,8 +27,8 @@ font-size:50px;
 export const  TitleContainer = styled.div`
 
   position: absolute;
-  top:40%;
-  bottom:40%;
+  top:270px;
+  
   left:10%;
   right:10%;
   
