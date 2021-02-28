@@ -55,6 +55,11 @@ export const TopLine = styled.div`
   text-align:left;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
 `;
 
 export const Img = styled.img`
@@ -74,7 +79,7 @@ export const Heading = styled.h1`
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 37px;
   }
 
 `;
