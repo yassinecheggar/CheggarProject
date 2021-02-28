@@ -4,20 +4,9 @@ import { Container } from '../../globalStyles';
 
 export const FormGroup = styled.div`
 
-	color: #0b66a3;
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
 	
-	 width:500px;
-	margin: 20px;
-    text-align:left;
-	@media screen and (max-width: 991px) {
-		width:400px;
-  }
-  @media screen and (max-width: 991px) {
-		width:300px;
-  }
+	margin-top: 20px;
+    
 `;
 
 export const Label = styled.label`
@@ -66,7 +55,7 @@ display:block;
 `
 export const FromWrapper = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 margin-top:1.5em;
 margin-bottom:3em;
 flex-wrap: wrap;
@@ -103,7 +92,10 @@ export const MapContainer = styled.div`
   
 `;
 export const FlexDiv = styled.div`
-display : flex;
+	display : flex;
+	flex-direction:column;
+	flex-grow: 0.6;
+	margin:2px;
 `;
 
 

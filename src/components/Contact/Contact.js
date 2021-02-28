@@ -28,7 +28,7 @@ import {
 
 const useStyles = makeStyles({
   root: {
-
+    marginTop:'10px;',
     '& label.Mui-focused': {
       color: 'green',
     },
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 
 const ButtonStyle = makeStyles({
   root: {
-
+      marginTop:'20px;',
     background:'black',
     '&:hover': {
       background: '#ff7315',
@@ -64,16 +64,15 @@ function Contact() {
               <Subtitle>Dont be shy, Just tell us about yourself and we’ll figure out the best option for you and your project.</Subtitle>
           </TitleContainer>
         <FromWrapper>
-          <GroupWrapper>
-            <FlexDiv></FlexDiv>
-            <FormGroup>
+          <FlexDiv>
+            
+            
               <TextField id="name" label="Full Name"  classes={{ root: classes.root }}/>
-            </FormGroup>
-            <FormGroup>
+            
               <TextField id="Email" label="Email" type="email" classes={{ root: classes.root }} />
-            </FormGroup>
+            
 
-            <FormGroup>
+            
               <TextField
                 id="standard-multiline-static"
                 label="Message"
@@ -81,13 +80,13 @@ function Contact() {
                 rows={4}
                 classes={{ root: classes.root }}
               />
-            </FormGroup>
-            <FormGroup>
+            
+            
             <Button variant="contained" color="primary" href="#contained-buttons"  classes={{ root: classesB.root }}>
         Send
       </Button>
-      </FormGroup>
-          </GroupWrapper>
+      
+          </FlexDiv>
 
 
           <GroupWrapper>
