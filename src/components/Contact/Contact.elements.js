@@ -95,7 +95,7 @@ export const FlexDiv = styled.div`
 	display : flex;
 	flex-direction:column;
 	flex-grow: 0.6;
-	margin:2px;
+	margin:20px;
 `;
 
 

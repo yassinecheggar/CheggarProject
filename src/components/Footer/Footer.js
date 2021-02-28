@@ -94,7 +94,7 @@ function Footer() {
             </SocialIconLink>
             <SocialIconLink
               href={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                '//www.youtube.com/watch?v=5qap5aO4i9A'
               }
               rel='noopener noreferrer'
               target='_blank'
