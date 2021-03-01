@@ -6,7 +6,7 @@ export const ServiceObjOne ={
     Name: <h2 id="transition-modal-title" style={{color:'#ff7315'}}>Automatisme - Régulation</h2>,
     Text: <><Horiz /> 
 
-    <Text>- Programmation et automates automates automates automates automates</Text>
+    <Text>- Programmation et automates </Text>
     <Text>- Maintenance des automates programmables</Text>
     <Text>- Variateurs de vitesse</Text>
     <Text>- Réseaux Profibus</Text>

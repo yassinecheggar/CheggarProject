@@ -26,13 +26,11 @@ ${Container}
 `;
 
 export const  NavLogo = styled(Link)`
-color:#f4f4f4;
 justify-self:flex-start;
 cursor: pointer;
 text-decoration:none;
 display:flex;
-font-size:2rem;
-align-items:center;
+
 `
 export const  NavIcon =styled(FaMagento)`
 margin-right:0.5rem;`
@@ -108,11 +106,11 @@ height: 100%;
 `;
 export const  Img = styled.img`
    
-   height: 80%;
+   height: auto;
    width:25%;
    
    @media screen and  (max-width:960px){
-    height: 100%;
+    height: auto;
     width:35%;
    }
 `;
