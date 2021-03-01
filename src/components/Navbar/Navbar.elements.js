@@ -26,11 +26,13 @@ ${Container}
 `;
 
 export const  NavLogo = styled(Link)`
+
 justify-self:flex-start;
 cursor: pointer;
 text-decoration:none;
 display:flex;
 
+-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 `
 export const  NavIcon =styled(FaMagento)`
 margin-right:0.5rem;`
