@@ -33,7 +33,8 @@ export const  Horiz = styled.hr`
 export const  Text = styled.p`
    
    padding:15px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 2;
   
 `;
 
