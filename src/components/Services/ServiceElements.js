@@ -45,8 +45,12 @@ display:flex;
 
 export const  ItemsTitle= styled.h1`
 
-color:#2679ff;
+color:#ff7315;
 margin-bottom:50px;
 font-weight:normal;
+
+
+font-family: 'Cormorant Garamond', serif;
+font-weight:900;
 `;
  

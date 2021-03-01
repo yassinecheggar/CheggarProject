@@ -54,7 +54,7 @@ function About() {
 
 
         <TextWrapper>
-          <HeadText>LES VALEURS</HeadText>
+          <HeadText>VALEUR</HeadText>
           <Decscription>
             Transmettre avec pragmatisme et humilité une réflexion, des méthodes
             et des savoir-faire, enrichis par une expérience terrain.<br/> Faire
