@@ -1,5 +1,9 @@
 import React from "react";
 import { Container } from "../../globalStyles";
+import Svg1 from "../../images/hygiene.svg";
+import Svg2 from "../../images/construction.svg";
+import Svg3 from "../../images/qualitative.svg";
+import Svg4 from "../../images/environment.svg";
 import {
   ImageContainer,
   Img,
@@ -9,6 +13,8 @@ import {
   HeadText,
   TextContainer,
   TextWrapper,
+  ItemsContainer,ImageItem,Item,
+  ItemDesc
 } from "./AboutElements";
 
 function About() {
@@ -19,7 +25,8 @@ function About() {
           <Title>We make Mondays to Fridays exciting </Title>
         </TitleContainer>
 
-        <Img src="image/work.jpg"></Img>
+       {/*  <Img src="image/work.jpg"></Img> */}
+
       </ImageContainer>
 
       <Container>
@@ -63,6 +70,24 @@ function About() {
             et de franchise dans toutes les étapes de la relation.
           </Decscription>
         </TextWrapper>
+        <ItemsContainer>
+                <Item>
+                  <ImageItem src={Svg3}></ImageItem>
+                  <ItemDesc>Qualité</ItemDesc>
+                </Item>
+                <Item>
+                <ImageItem src={Svg1}></ImageItem>
+                <ItemDesc>Hygiene</ItemDesc>
+                </Item>
+                <Item>
+                <ImageItem src={Svg2}></ImageItem>
+                <ItemDesc>Sécurité</ItemDesc>
+                </Item>
+                <Item>
+                <ImageItem src={Svg4}></ImageItem>
+                <ItemDesc>Onvironnement</ItemDesc>
+                </Item>
+        </ItemsContainer>
       </Container>
     </>
   );

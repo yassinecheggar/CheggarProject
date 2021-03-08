@@ -48,7 +48,7 @@ function Footer() {
           <FooterLinkItems>
             <FooterLinkTitle>About Us</FooterLinkTitle>
             <FooterLink to='/'>How it works</FooterLink>
-            <FooterLink to='/'>Testimonials</FooterLink>
+        
             <FooterLink to='/'>Careers</FooterLink>
             <FooterLink to='/'>Investors</FooterLink>
             <FooterLink to='/'>Terms of Service</FooterLink>
@@ -56,19 +56,19 @@ function Footer() {
           <FooterLinkItems>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
             <FooterLink to='/'>Contact</FooterLink>
-            <FooterLink to='/'>Support</FooterLink>
+              <FooterLink to='/'>Support</FooterLink>
             <FooterLink to='/'>Destinations</FooterLink>
             <FooterLink to='/'>Sponsorships</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
-          <FooterLinkItems>
+         {/*  <FooterLinkItems>
             <FooterLinkTitle>Videos</FooterLinkTitle>
             <FooterLink to='/'>Submit Video</FooterLink>
             <FooterLink to='/'>Ambassadors</FooterLink>
             <FooterLink to='/'>Agency</FooterLink>
             <FooterLink to='/'>Influencer</FooterLink>
-          </FooterLinkItems>
+          </FooterLinkItems>*/}
           <FooterLinkItems>
             <FooterLinkTitle>Social Media</FooterLinkTitle>
             <FooterLink to='/'>Instagram</FooterLink>
