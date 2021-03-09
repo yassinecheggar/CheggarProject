@@ -91,7 +91,7 @@ export const MapContainer = styled.div`
   height:300px;
   
 `;
-export const FlexDiv = styled.div`
+export const FlexDiv = styled.form`
 	display : flex;
 	flex-direction:column;
 	flex-grow: 0.6;

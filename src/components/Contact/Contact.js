@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{ useState} from "react";
 import { Container } from "../../globalStyles";
 import { TopLine } from "../InfoSection/InfoSectionElements";
 import TextField from "@material-ui/core/TextField";
@@ -8,6 +8,8 @@ import { BsPhone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import Map from '../Map/Map';
 import { makeStyles } from '@material-ui/core/styles';
+import emailjs ,{ init } from 'emailjs-com';
+
 
 import {
   FormGroup,
@@ -23,7 +25,6 @@ import {
   InfoContainer,
   FlexDiv
 } from "./Contact.elements";
-
 
 
 const useStyles = makeStyles({
@@ -52,9 +53,45 @@ const ButtonStyle = makeStyles({
   },
  
 });
+
+
 function Contact() {
   const classes = useStyles();
   const  classesB = ButtonStyle();
+  
+  const emptyEmail = {
+    name: '',
+    email: '',
+    msg: '',
+  };
+  const [email, setEmail] = useState(emptyEmail);
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState(null);
+  
+  const handleChange = (e) => {
+    e.persist();
+    setEmail((prev) => (
+      { ...prev, [e.target.name]: e.target.value }
+    ));
+  };
+  
+  
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage(null);
+    try {
+      await emailjs.send('service_zzt8j7r', 'template_q0xwcn6', email, 'user_fWIK1bCqUbyAQG9ZoOoFF');
+      setMessage('Thank you!');
+      setEmail(emptyEmail);
+    } catch (err) {
+      setMessage('error!');
+    } finally {
+      setLoading(false);
+    }
+  };
+ 
 
   return (
     <>
@@ -64,25 +101,28 @@ function Contact() {
               <Subtitle>Dont be shy, Just tell us about yourself and we’ll figure out the best option for you and your project.</Subtitle>
           </TitleContainer>
         <FromWrapper>
-          <FlexDiv>
+          <FlexDiv onSubmit={handleSubmit}>
+             
             
+              <TextField  name="name" label="Full Name"  classes={{ root: classes.root }} value={email.name} onChange={handleChange}/>
             
-              <TextField id="name" label="Full Name"  classes={{ root: classes.root }}/>
-            
-              <TextField id="Email" label="Email" type="email" classes={{ root: classes.root }} />
+              <TextField name="email" label="Email" type="email" classes={{ root: classes.root }} onChange={handleChange} value={email.email}/>
             
 
             
               <TextField
-                id="standard-multiline-static"
+             
+                name="msg"
                 label="Message"
+                value={email.msg}
                 multiline
                 rows={4}
-                classes={{ root: classes.root }}
+                classes={{ root: classes.root } }
+                onChange={handleChange}
               />
             
             
-            <Button variant="contained" color="primary" href="#contained-buttons"  classes={{ root: classesB.root }}>
+            <Button variant="contained" color="primary"  type="submit" classes={{ root: classesB.root }}>
         Send
       </Button>
       
