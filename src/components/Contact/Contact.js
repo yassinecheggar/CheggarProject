@@ -23,7 +23,7 @@ import {
   Subtitle,
   TitleContainer,
   InfoContainer,
-  FlexDiv
+  FlexDiv,HR,
 } from "./Contact.elements";
 
 
@@ -97,9 +97,11 @@ function Contact() {
     <>
       <Container>
           <TitleContainer>
-              <Title>Reach out to us</Title>
-              <Subtitle>Dont be shy, Just tell us about yourself and we’ll figure out the best option for you and your project.</Subtitle>
+              <Title>Nous Contacter <HR></HR></Title>  
+              
           </TitleContainer>
+          <TitleContainer> <Subtitle>POUR EN SAVOIR PLUS SUR NOTRE OFFRE, POSTULER OU TOUT SIMPLEMENT POSER UNE QUESTION, C’EST PAR ICI !.</Subtitle></TitleContainer>
+         
         <FromWrapper>
           <FlexDiv onSubmit={handleSubmit}>
              
@@ -148,12 +150,14 @@ function Contact() {
         </FromWrapper>
       </Container>
       <Container>
-        
-        <Title>Visit our office</Title>
-        <Label>You don’t need an appointment, just walk in.</Label>
+      <TitleContainer>
+        <Title >Visitez notre bureau <HR></HR></Title>
+        </TitleContainer>
+        <TitleContainer> <Label>Vous n’avez pas besoin de rendez-vous.</Label></TitleContainer>
+       
         </Container>
       <Container>
-        <Label></Label>
+       
         <Map />
         
       </Container>

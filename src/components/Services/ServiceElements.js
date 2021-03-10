@@ -45,7 +45,7 @@ display:flex;
 
 export const  ItemsTitle= styled.h1`
 
-color:#ff7315;
+color:#3a3535;
 margin-bottom:50px;
 font-weight:normal;
 

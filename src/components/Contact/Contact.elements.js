@@ -62,20 +62,30 @@ flex-wrap: wrap;
 `;
 
 export const TitleContainer = styled.div`
-
 display:flex;
-flex-direction:column;
+justify-content:center;
+
 `;
 
 export const Title = styled.h1`
 margin-top:1.5em;
 margin-bottom:0.9em;
 color:#232020;
+border-width: 6px !important;
+border-color:black;
+display:block;
+font-weight:normal;
+ 
+
+font-family: 'Cormorant Garamond', serif;
+font-weight:900;
+
 `;
 
 export const Subtitle = styled.h3`
 
 color:#3a3535;
+max-width:900px;
 `;
 
 export const InfoContainer = styled.div`
@@ -86,16 +96,19 @@ margin-top:40px;
 color:#ff7315;
 `;
 
-export const MapContainer = styled.div`
-  width: 600px;
-  height:300px;
-  
-`;
+
 export const FlexDiv = styled.form`
 	display : flex;
 	flex-direction:column;
 	flex-grow: 0.6;
 	margin:20px;
 `;
+export const HR = styled.hr`
+  width:350px;
+  display:block;
+  align-self:center;
+  border: 2px solid #ff7315;
+`;
+
 
 

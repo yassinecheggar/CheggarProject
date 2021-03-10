@@ -43,7 +43,7 @@ function CustomModal(Item) {
   return (
     <div>
       <Button size="small" color="primary" onClick={handleOpen}>
-                  learn more
+                  Plus
                 </Button>
       <MyModal
         aria-labelledby="transition-modal-title"

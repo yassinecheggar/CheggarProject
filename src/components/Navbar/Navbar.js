@@ -24,7 +24,7 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              
+               
               <Img src="image/logo.png" />
             </NavLogo>
             <MobileIcon onClick={handlclick}>
@@ -35,17 +35,15 @@ function Navbar() {
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/Service">Service</NavLinks>
+                <NavLinks to="/Service">Services</NavLinks>
               </NavItem>
+              
               <NavItem>
-                <NavLinks to="/Product">Product</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/About">About</NavLinks>
+                <NavLinks to="/About">à propos</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/Contact">Contact</NavLinks>
+                <NavLinks to="/Contact">Contacte</NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

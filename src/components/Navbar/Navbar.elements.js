@@ -31,8 +31,13 @@ justify-self:flex-start;
 cursor: pointer;
 text-decoration:none;
 display:flex;
+max-width:200px;
 
--webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+
+@media screen and  (max-width:960px){
+
+width:40%;
+}
 `;
 export const  NavIcon =styled(FaMagento)`
 margin-right:0.5rem;`
@@ -109,10 +114,10 @@ height: 100%;
 export const  Img = styled.img`
    
    height: auto;
-   width:25%;
+   width:100%;
    
    @media screen and  (max-width:960px){
     height: auto;
-    width:35%;
+    width:100%;
    }
 `;

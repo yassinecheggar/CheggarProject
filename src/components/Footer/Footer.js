@@ -35,9 +35,9 @@ function Footer() {
     <FooterContainer>
       <FooterSubscription>
         <FooterSubHeading>
-          Join our exclusive membership to receive the latest news and trends
+        Rejoignez nous et recevez les dernières nouvelles et tendances
         </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time.</FooterSubText>
+        <FooterSubText>Vous pouvez vous désabonner à tout moment.</FooterSubText>
         <Form>
           <FormInput name='email' type='email' placeholder='Your Email' />
           <Button fontBig>Subscribe</Button>
@@ -46,7 +46,7 @@ function Footer() {
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
+            <FooterLinkTitle>A propos</FooterLinkTitle>
             <FooterLink to='/'>How it works</FooterLink>
         
             <FooterLink to='/'>Careers</FooterLink>
@@ -54,7 +54,7 @@ function Footer() {
             <FooterLink to='/'>Terms of Service</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>
-            <FooterLinkTitle>Contact Us</FooterLinkTitle>
+            <FooterLinkTitle>Contacte</FooterLinkTitle>
             <FooterLink to='/'>Contact</FooterLink>
               <FooterLink to='/'>Support</FooterLink>
             <FooterLink to='/'>Destinations</FooterLink>
@@ -84,7 +84,7 @@ function Footer() {
             <GiAfrica />
              M C D O S
           </SocialLogo>
-          <WebsiteRights>Cheggar © 2021</WebsiteRights>
+          <WebsiteRights>MCDOS © 2021</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
               <FaFacebook />

@@ -14,6 +14,7 @@ import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import mystyle from "react-awesome-slider/dist/styles.css?raw";
 import CustomModal from '../Modal/CustomModal';
+import {TitleContainer,HR} from '../Contact/Contact.elements';
 import {ServiceObjOne ,
   ServiceObjTwo ,
   ServiceObjThree
@@ -73,7 +74,8 @@ function Service() {
       
       <ServiceSec>
         <Container>
-          <ItemsTitle>NOS FORMATIONS</ItemsTitle>
+          <TitleContainer> <ItemsTitle>NOS FORMATIONS <HR></HR></ItemsTitle></TitleContainer>
+         
           <Itemcontainer>
             <Card
               className={classes.root}
